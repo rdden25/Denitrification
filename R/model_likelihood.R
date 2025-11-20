@@ -6,7 +6,7 @@
 #' @param paramsVec a parameter vector of length 4 or 5 created by the first column output by \code{plotmod}. If model == 1 or 3, the order will be: DN, K600, sigma2, logpost. If model == 2 or 4 will be: K600, DN, Nfix, sigma2, logpost.
 #' @param model Model number for fitting algorithm (see details bleow).
 #'
-#' @details Model determines which model to estimate. 0 is the oxygen model (Eq. 2 from Nifong et al), 1 is the single station model without N consumption (DN base model Eq. 3 from Nifong et al.), 2 is the single station model with N consumption (DN + Nconsume Eq. 4 from Nifong et al.), the  3 being the two-station model without N consumption (DN base Eq. 5 from Nifong et al.), and 4 being the two station model with N consumption (DN N consume Eq. 6 from Nifong et al.).
+#' @details Model determines which model to estimate. 0 is the oxygen model (Eq. 2), 1 is the single station model without N consumption (DN base model Eq. 3), 2 is the single station model with N consumption (DN + Nconsume Eq. 4), the  3 being the two-station model without N consumption (DN base Eq. 5), and 4 being the two station model with N consumption (DN N consume Eq. 6).
 #'
 #' @export
 model_likelihood <- function(dataList, paramsVec, model, incl_DN = TRUE){
