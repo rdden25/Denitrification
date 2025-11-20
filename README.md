@@ -1,6 +1,6 @@
 # Denitrification
 
-This is an R package to run the analyses used in Nifong et al.
+This is an R package to run the analyses.
 
 To install run the following
 
